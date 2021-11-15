@@ -1,0 +1,65 @@
+:root {
+    --borderBlue: #00E5FF;
+    --borderPink:  #FF29FE;
+    --borderWhite: #FEFEFE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images4.alphacoders.com/710/710534.jpg);
+    background-size: contain;
+    background-position: center center;
+    backdrop-filter: blur(40px);
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    font-family: sans-serif;
+}
+
+/* Utils */
+
+.border-blue {
+    border-color: var(--borderBlue);
+}
+
+.border-pink {
+    border-color: var(--borderPink);
+}
+
+.border-white {
+    border-color: var(--borderWhite);
+}
+
+/* App */
+.app {
+    background-color: #333333;
+    border-radius: 20px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.app__btn {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    height: 100px;
+    width: 100px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

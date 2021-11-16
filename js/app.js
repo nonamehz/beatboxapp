@@ -21,15 +21,10 @@ clickBoton();
 const teclaBoton = ({ key }) => {
     playBeat(key);
 }
-// function teclaBoton({ key }) {
-//     eventoBoton(key)
-// }
 
 function clickBoton() {
     evaluarBotones(buttons)
 }
-
-
 
 function evaluarBotones(btnArr) {
     btnArr.forEach(btn => {
@@ -40,41 +35,6 @@ function evaluarBotones(btnArr) {
 
     });
 }
-
-// function eventoBoton(key) {
-//     switch (key) {
-//         case 'a':
-//             playBeat(key);
-//             break;
-//         case 's':
-//             playBeat(key);
-//             break;
-//         case 'd':
-//             playBeat(key);
-//             break;
-//         case 'f':
-//             playBeat(key);
-//             break;
-//         case 'g':
-//             playBeat(key);
-//             break;
-//         case 'h':
-//             playBeat(key);
-//             break;
-//         case 'j':
-//             playBeat(key);
-//             break;
-//         case 'k':
-//             playBeat(key);
-//             break;
-//         case 'l':
-//             playBeat(key);
-//             break;
-//         default:
-//             console.log('Esta tecla no está en el instrumento xd');
-//             break;
-//     }
-// }
 
 function playBeat(key) {
     let audioSrc = beats[key];
